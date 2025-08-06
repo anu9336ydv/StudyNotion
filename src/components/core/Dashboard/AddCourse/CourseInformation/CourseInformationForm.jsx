@@ -33,7 +33,19 @@ export const CourseInformationForm = () => {
   // console.log("editcourse" ,editCourse)
   const [loading, setLoading] = useState(false);
   const [coursesCategories, setCourseCategories] = useState();
-  // const Categories = ["AI","Blockchain", "Cloud Computing", "Cyber Security", "Data Science", "DevOps", "Digital Marketing", "Full Stack Development", "Machine Learning", "Mobile App Development", "Web Development"]
+  const Categories = [
+    "AI",
+    "Blockchain",
+    "Cloud Computing",
+    "Cyber Security",
+    "Data Science",
+    "DevOps",
+    "Digital Marketing",
+    "Full Stack Development",
+    "Machine Learning",
+    "Mobile App Development",
+    "Web Development",
+  ];
 
   useEffect(() => {
     const getCategories = async () => {
