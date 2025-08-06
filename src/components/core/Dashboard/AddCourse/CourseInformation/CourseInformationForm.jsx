@@ -28,7 +28,8 @@ export const CourseInformationForm = () => {
  // console.log("course-",course)
  // console.log("editcourse" ,editCourse)
   const[loading,setLoading]= useState(false);
-  const[coursesCategories,setCourseCategories]=useState(["Android","Web Development"]);
+  const[coursesCategories,setCourseCategories]=useState();
+  const Categories = ["AI","Blockchain", "Cloud Computing", "Cyber Security", "Data Science", "DevOps", "Digital Marketing", "Full Stack Development", "Machine Learning", "Mobile App Development", "Web Development"]
 
   useEffect(()=>{
       const getCategories = async()=>{
@@ -217,7 +218,7 @@ export const CourseInformationForm = () => {
         >
           <option value="" disabled> Choose a Category</option>
           {
-            !loading && coursesCategories.map((category,index)=>(
+            !loading && Categories.map((category,index)=>(
               <option key={index} value={category?._id}>
                   {category.name}
               </option>
