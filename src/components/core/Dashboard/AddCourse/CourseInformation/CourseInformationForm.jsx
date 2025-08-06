@@ -242,8 +242,8 @@ export const CourseInformationForm = () => {
           </option>
           {!loading &&
             Categories.map((category, index) => (
-              <option key={index} value={category?._id}>
-                {category?.name}
+              <option key={index} value={category}>
+                {category}
               </option>
             ))}
         </select>
