@@ -28,7 +28,7 @@ export const CourseInformationForm = () => {
  // console.log("course-",course)
  // console.log("editcourse" ,editCourse)
   const[loading,setLoading]= useState(false);
-  const[coursesCategories,setCourseCategories]=useState([]);
+  const[coursesCategories,setCourseCategories]=useState(["Android","Web Development"]);
 
   useEffect(()=>{
       const getCategories = async()=>{
